@@ -17,7 +17,7 @@ export default function Home({ question }) {
 export async function getServerSideProps() {
   let baseUrl = 'http://localhost:3000';
   if(process.env.VERCEL_URL) {
-    baseUrl = process.env.VERCEL_URL
+    baseUrl = 'https://just-icebreaker.vercel.app';
   }
 
   const res = await axios.get(baseUrl+'/api/question');
