@@ -407,6 +407,6 @@ const questions = [
 export default (_req, res) => {
   res.statusCode = 200;
   res.json({ 
-    question: questions[Math.floor(Math.random()*items.length)]
+    question: questions[Math.floor(Math.random()*questions.length)]
   });
 }
