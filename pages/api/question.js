@@ -430,7 +430,6 @@ const questions = [
   "You're going sail around the world, what's the name of your boat?",
 
   // New questions May 2025 from DeepSeek
-
   // Hypotheticals
   "If you could eliminate one emotion forever, which would you choose?",
   "If you had to replace your hands with objects, what would you pick?",
