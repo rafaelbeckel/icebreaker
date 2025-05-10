@@ -344,7 +344,7 @@ const questions = [
   "What's the weirdest food you've ever eaten?",
   "What's the weirdest way you have met someone?",
   "What's the worst advice you've been given?",
-  "What's your best \"my coworkers are crazy\" story?",
+  'What\'s your best "my coworkers are crazy" story?',
   "What's your best scar story?",
   "What's your best scary story?",
   "What's your caffeinated beverage of choice? Coffee? Cola? Tea?",
@@ -427,9 +427,10 @@ const questions = [
   "You can have anyone fictional as your imaginary friend, who do you choose and why?",
   "You have to sing karaoke, what song do you pick?",
   "You have your own late night talk show, who do you invite as your first guest?",
-  "You're going sail around the world, what's the name of your boat?"
-  
-  // New questions May 2025
+  "You're going sail around the world, what's the name of your boat?",
+
+  // New questions May 2025 from DeepSeek
+
   // Hypotheticals
   "If you could eliminate one emotion forever, which would you choose?",
   "If you had to replace your hands with objects, what would you pick?",
@@ -721,7 +722,7 @@ const questions = [
 
 export default (_req, res) => {
   res.statusCode = 200;
-  res.json({ 
-    question: questions[Math.floor(Math.random()*questions.length)]
+  res.json({
+    question: questions[Math.floor(Math.random() * questions.length)],
   });
-}
+};

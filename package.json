@@ -8,10 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "next": "^10.2.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "yarn": "^1.22.11"
+    "axios": "^1.9",
+    "next": "^15.3",
+    "react": "^19.1",
+    "react-dom": "^19.1",
+    "yarn": "^2.4"
   }
 }

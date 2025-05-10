@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import axios from 'axios'
+import Head from "next/head";
+import axios from "axios";
 
 export default function Home({ question }) {
   return (
@@ -11,29 +11,29 @@ export default function Home({ question }) {
 
       <h1>{question}</h1>
     </div>
-  )
+  );
 }
 
 export async function getServerSideProps() {
-  let baseUrl = 'http://localhost:3000';
-  if(process.env.VERCEL_URL) {
-    baseUrl = 'https://just-icebreaker.vercel.app';
+  let baseUrl = "http://localhost:3000";
+  if (process.env.VERCEL_URL) {
+    baseUrl = "https://just-icebreaker.vercel.app";
   }
 
-  const res = await axios.get(baseUrl+'/api/question');
+  const res = await axios.get(baseUrl + "/api/question");
   const data = await res.data;
 
   if (!data) {
     return {
       props: {
-        question: "Would you mind reloading the page? [404]"
+        question: "Would you mind reloading the page? [404]",
       },
-    }
+    };
   }
 
   return {
-      props: {
-        question: data.question
-      }
-  }
+    props: {
+      question: data.question,
+    },
+  };
 }
